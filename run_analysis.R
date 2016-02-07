@@ -109,7 +109,5 @@ summaryData <- fullDataSet %>%
 
 # Write data out to files
 tidyDataFile <- "./tidyData.txt"
-summaryFile <- "./summary.txt"
-write.table(fullDataSet, tidyDataFile, col.names = TRUE, quote = FALSE)
-write.table(summaryData, summaryFile, col.names = TRUE, quote = FALSE)
+write.table(summaryData, tidyDataFile, row.names = FALSE, col.names = TRUE, quote = FALSE)
 
